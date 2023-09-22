@@ -1,0 +1,61 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+---
+
+<Layout title="Welcome to Astro.">
+    <div class="container mx-auto my-2 px-8 bg-white">
+        <h1 class="text-3xl font-bold underline">demo
+        </h1>
+        <hr />
+        <ul>
+            <li class="my-2 py-2">
+                <a href={`/demo/container`}>[ container ]</a>
+                <hr />
+            </li>
+            <li class="my-2 py-2">
+                <a href={`/demo/button`}>[ button ]</a>
+                <hr />
+            </li>
+            <li class="my-2 py-2">
+                <a href={`/demo/flex`}>[ flex ]</a>
+                <hr />
+            </li>
+            <li class="my-2 py-2">
+                <a href={`/demo/grid`}>[ grid ]</a>
+                <hr />
+            </li>
+            <li class="my-2 py-2">
+                <a href={`/demo/form`}>[ form ]</a>
+                <hr />
+            </li>
+            <li class="my-2 py-2">
+                <a href={`/demo/table`}>[ table ]</a>
+                <hr />
+            </li>
+            <li class="my-2 py-2">
+                <a href={`/demo/image`}>[ image ]</a>
+                <hr />
+            </li>
+            <li class="my-2 py-2">
+                <a href={`/demo/card`}>[ card ]</a>
+                <hr />
+            </li>
+            <li class="my-2 py-2">
+                <a href={`/demo/alert`}>[ alert ]</a>
+                <hr />
+            </li>
+        </ul>
+        <hr />
+        Other
+        <ul>
+            <li class="my-2 py-2">
+                <a href={`/demo/secret`}>[ secret ]</a>
+                <hr />
+            </li>        
+        </ul>
+    </div>
+</Layout>
+
+<style>
+</style>

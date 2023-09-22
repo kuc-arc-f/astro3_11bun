@@ -1,0 +1,38 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+---
+
+<Layout title="Welcome to Astro.">
+    <div class="container mx-auto my-2 px-8 bg-white">
+        <h1 class="text-4xl font-bold">alert</h1>
+        <hr class="my-2" />
+        Error:
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded" role="alert">
+        <strong class="font-bold">Holy smokes!</strong><br />
+        <span class="block sm:inline">Something seriously bad happened.</span>
+        </div>
+        <hr class="my-2" />
+        Warn:
+        <div class="bg-yellow-100 border border-yellow-500 text-yellow-700 p-4 rounded" role="alert">
+        <p class="font-bold">Be Warned</p>
+        <p>Something not ideal might be happening.</p>
+        </div>
+        <hr class="my-2" />
+        info:
+        <div class="bg-blue-100 border border-blue-500 text-blue-700 px-4 py-3 rounded" role="alert">
+        <p class="font-bold">Informational message</p>
+        <p class="text-sm">Some additional text to explain said message.</p>
+        </div>
+        <hr class="mb-4" />
+
+    </div>
+</Layout>
+
+<!-- -->
+<style>
+</style>
+
+<!--
+<h1 class="text-4xl font-bold text-center">container</h1>
+-->

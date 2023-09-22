@@ -1,0 +1,11 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import App from './App.tsx';
+//
+---
+
+<Layout title="Welcome to Astro.">
+    <div class="container_base">
+        <App client:only="react" />
+    </dic>
+</Layout>

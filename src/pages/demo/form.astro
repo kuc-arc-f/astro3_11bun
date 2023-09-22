@@ -1,0 +1,85 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+---
+
+<Layout title="Welcome to Astro.">
+    <div class="container mx-auto my-2 px-8 bg-white">
+        <h1 class="text-4xl font-bold">form</h1>
+        <hr class="my-2" />
+        <h2 class="text-2xl font-semibold mb-6">Sample Form</h2>
+        <form>
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                <input type="text" id="name" name="name" class="border border-gray-400 rounded-md px-3 py-2 w-full focus:outline-none focus:border-blue-500" placeholder="John Doe" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                <input type="email" id="email" name="email" class="border border-gray-400 rounded-md px-3 py-2 w-full focus:outline-none focus:border-blue-500" placeholder="johndoe@example.com" required>
+            </div>
+            <div class="mb-6">
+                <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                <textarea id="message" name="message" class="border border-gray-400 rounded-md px-3 py-2 w-full h-32 resize-none focus:outline-none focus:border-blue-500" placeholder="Write your message here" required></textarea>
+            </div>
+            <div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue active:bg-blue-700">Submit</button>
+            </div>
+        </form>
+        <hr class="my-2" />
+        <div class="mb-4">
+            <label for="cars" class="block text-gray-700 font-bold mb-2">Choose a car:</label>
+            <select id="cars" name="cars" class="border border-gray-400 rounded-md px-3 py-2 w-full focus:outline-none focus:border-blue-500">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <hr class="my-2" />
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+            radio :
+            </label>
+            <label class="inline-flex items-center">
+            <input name="presentationScore" class="form-radio" type="radio" value="4" checked>
+            <span class="ml-2">radio_1</span>
+            </label>
+            <label class="inline-flex items-center">
+            <input name="presentationScore" class="form-radio" type="radio" value="3">
+            <span class="ml-2">radio_2</span>
+            </label>
+            <label class="inline-flex items-center">
+            <input name="presentationScore" class="form-radio" type="radio" value="2">
+            <span class="ml-2">radio_3</span>
+            </label>
+        </div>
+        <hr class="my-2" />
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+            CheckBox :
+            </label>       
+            <label class="inline-flex items-center">
+            <input type="checkbox" name="check_1" class="rounded-full mx-1 text-cyan-600 focus:outline-none" />
+            <span class="ml-2">check_1</span>
+            </label> 
+            <label class="inline-flex items-center">
+            <input type="checkbox" name="check_2" class="rounded-full mx-1 text-cyan-600 focus:outline-none" />
+            <span class="ml-2">check_2</span>
+            </label> 
+            <label class="inline-flex items-center">
+            <input type="checkbox" name="check_3" class="rounded-full mx-1 text-cyan-600 focus:outline-none" />
+            <span class="ml-2">check_3</span>
+            </label> 
+        </div>
+        <hr class="mb-4" />
+
+    </div>
+</Layout>
+
+<!-- -->
+<style>
+</style>
+
+<!--
+<h1 class="text-4xl font-bold text-center">container</h1>
+-->
