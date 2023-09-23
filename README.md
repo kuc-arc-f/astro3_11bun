@@ -6,7 +6,7 @@
 
  date    : 2023/09/21
 
- update  : 
+ update  : 2023/09/23 
 ***
 ### Summary
 
@@ -15,7 +15,7 @@ bun + Astro 3 + tailwindcss + Cloudflare pages, sample
 ***
 ### API Server
 
-https://github.com/kuc-arc-f/bun_4pg_pub
+https://github.com/kuc-arc-f/bun_5d1
 
 ***
 ### setup

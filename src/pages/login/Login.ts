@@ -25,10 +25,10 @@ const Login = {
             }
 //            console.log("passwordValue=", passwordValue);
             const json = await HttpCommon.server_post(postItem, "/users/get");
-            //console.log(json);
+            console.log(json);
             if (json.ret !==  LibConfig.OK_CODE) {
                 console.error("Error,json.ret <> OK");
-                alert("Error");
+                alert("Error, login");
                 return;
             }
             const user = json.data;
